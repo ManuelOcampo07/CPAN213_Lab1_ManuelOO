@@ -31,13 +31,23 @@ function App() {
           <Text style={styles.goal}>• Master state management with Redux</Text>
           <Text style={styles.goal}>• Deploy apps to app stores</Text>
         </View>
+
+        <View style={styles.newChanges}>
+          <Text style={{ color: 'green' }}> Hello I added this line of text to see how the app refreshes after a change!</Text>
+        </View>
       </View>
 
-      <View style={styles.newChanges}>
-          <Text style={{ color: 'green' }}>Hello I added this line of text to see how the app refreshes after a change!</Text>
-      </View>
     </SafeAreaView>
   );
+}
+
+const bS = (blur: number ,offX: number, offY: number, color: string) => {
+    return {
+      offsetX: offX,
+      offsetY: offY,
+      blurRadius: "{blur}px",
+      color: color
+    }
 }
 
 const styles = StyleSheet.create({
@@ -102,10 +112,11 @@ const styles = StyleSheet.create({
     lineHeight: 22,
   },
   newChanges: {
-    margin: 20,
+    marginTop: 20,
     padding: 15,
     backgroundColor: '#fff',
     borderRadius: 10,
+     elevation: 3,
   },
 });
 
