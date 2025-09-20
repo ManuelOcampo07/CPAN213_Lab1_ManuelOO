@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Attach to Hermes application (Android)",
+      "type": "reactnativedirect",
+      "request": "attach",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Attach to packager",
+      "type": "reactnative",
+      "request": "attach",
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
