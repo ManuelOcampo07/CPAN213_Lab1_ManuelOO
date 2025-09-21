@@ -2,16 +2,11 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Attach to Hermes application (Android)",
+      "name": "Attach to Hermes Android",
       "type": "reactnativedirect",
       "request": "attach",
-      "cwd": "${workspaceFolder}"
-    },
-    {
-      "name": "Attach to packager",
-      "type": "reactnative",
-      "request": "attach",
-      "cwd": "${workspaceFolder}"
+      "cwd": "${workspaceFolder}",
+      "port": 8081
     }
   ]
 }

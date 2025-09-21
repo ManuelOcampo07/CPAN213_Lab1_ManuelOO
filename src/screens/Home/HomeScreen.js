@@ -1,9 +1,10 @@
 import {ScrollView, StyleSheet, Text, View} from 'react-native';
-import Header from '../../components/common/Header';
-import AppConfig from '../../services/config';
+import {Header} from '../../components';
+import {AppConfig} from '../../services';
 
 const HomeScreen = () => {
   console.log('App Config:', AppConfig);
+  debugger;
 
   return (
     <View style={styles.container}>
@@ -18,15 +19,10 @@ const HomeScreen = () => {
     </View>
   );
 };
+
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#f5f5f5',
-  },
-  content: {
-    flex: 1,
-    padding: 20,
-  },
+  container: {flex: 1, backgroundColor: '#f5f5f5'},
+  content: {flex: 1, padding: 20},
   welcomeText: {
     fontSize: 24,
     fontWeight: 'bold',
@@ -41,4 +37,5 @@ const styles = StyleSheet.create({
     lineHeight: 24,
   },
 });
+
 export default HomeScreen;
